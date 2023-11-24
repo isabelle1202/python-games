@@ -91,3 +91,5 @@ def start_game():
 
 
 start_game()
+
+# give the ability to guess the word as a whole
