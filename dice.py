@@ -1,7 +1,5 @@
 
 import random
-from pprint import pprint
-
 # ask the user how many dice they'd like to roll
 
 
