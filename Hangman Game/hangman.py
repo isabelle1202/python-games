@@ -26,7 +26,7 @@ def start_game():
     # choose a category, program chooses a word from list
 
     user_chosen_category = (input(
-        "Hello! To start a hangman game, please select a category. \n'1' for Animals \n'2' for Countries \n'3' for Random Words \n "))
+        "\nHello! To start a hangman game, please select a category. \n'1' for Animals \n'2' for Countries \n'3' for Random Words \n "))
 
     if user_chosen_category == str(1):
         chosen_category = hangman_wordlist.animal_list
@@ -80,14 +80,24 @@ def start_game():
             # check if player won or lost
 
             if "_" not in display:
-                end_of_game = True
                 print("\nCongratulations! You guessed the word.\n")
-                break
+                continue_game = input(
+                    "\nWould you like to play another game? y for yes, n for no ").lower()
+                if continue_game == "y":
+                    start_game()
+                if continue_game == "n":
+                    print("Thank you for playing!")
+                    end_of_game = True
 
             if incorrect_guesses == MAX_ATTEMPTS:
-                end_of_game = True
                 print(f"\nYou ran out of guesses. The word was: {chosen_word}")
-                break
+                continue_game = input(
+                    "\nWould you like to play another game? y for yes, n for no ").lower()
+                if continue_game == "y":
+                    start_game()
+                if continue_game == "n":
+                    print("Thank you for playing!")
+                    end_of_game = True
 
 
 start_game()
