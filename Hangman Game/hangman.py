@@ -170,3 +170,13 @@ def start_game():
 
 
 start_game()
+
+# FUTURE ADDITIONS:
+
+# some words have spaces: figure out how to properly integrate this so that the game isn't confusing
+
+# add a counter for games : how many games played, W/L ratio
+# have actual art for the hangman game
+# consider adding a difficulty function (easy, normal, hard, expert)
+# different amounts of lives, difficulty of words, limited guesses, timers
+# subcategories in each category
