@@ -24,8 +24,6 @@ def start_game():
     # values
 
     global total_games, won_games
-    MAX_ATTEMPTS = 6
-    WORD_GUESSES = 3
     incorrect_guesses = 6
     incorrect_word_guess = 3
 
@@ -176,8 +174,6 @@ start_game()
 
 # some words have spaces: figure out how to properly integrate this so that the game isn't confusing
 
-# add a counter for games : how many games played, W/L ratio
-# have actual art for the hangman game
 # consider adding a difficulty function (easy, normal, hard, expert)
 # different amounts of lives, difficulty of words, limited guesses, timers
 # subcategories in each category
