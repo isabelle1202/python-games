@@ -31,9 +31,9 @@ def start_game():
 
     # game mechanics
 
-    # choose a category, program chooses a word from list
-
     total_games += 1
+
+    # define key functions
 
     def replay(continue_game):
         """Returns function if input == y, otherwise forces code to halt"""
@@ -52,6 +52,8 @@ def start_game():
 
         print("\nYou have guessed the following wrong letters: " + str(wrong_letters))
         print(" ".join(display))
+
+     # choose a category, program chooses a word from list
 
     while True:
         user_chosen_category = (input(
